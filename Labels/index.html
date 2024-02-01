@@ -21,23 +21,59 @@
           <p class="contact-form-intro">
             Enter your content information, and then there will be cake. 🍰
           </p>
-          <input class="contact-input" type="text" placeholder="Full Name" />
-          <input class="contact-input" type="text" placeholder="Address" />
+          <label for="name">Full Name</label>
+          <input
+            class="contact-input"
+            id="name"
+            type="text"
+            placeholder="Mark Rodd"
+          />
+          <label for="address">Address</label>
+          <input
+            class="contact-input"
+            id="address"
+            type="text"
+            placeholder="Address"
+          />
           <div class="address">
             <div class="city">
-              <input class="address-input" type="text" placeholder="City" />
+              <label for="city">City</label>
+              <select
+                class="city-select"
+                id="city"
+                type="text"
+                placeholder="London"
+              >
+                <option value="London">London</option>
+                <option value="Manchester">Manchester</option>
+                <option value="Liverpool">Liverpool</option>
+              </select>
             </div>
             <div class="postcode">
-              <input class="address-input" type="text" placeholder="Postcode" />
+              <label for="postcode">Postcode</label>
+              <input
+                class="address-input"
+                id="postcode"
+                type="text"
+                placeholder="NW1 6XE"
+              />
             </div>
           </div>
-          <input class="contact-input" type="text" placeholder="Email" />
+          <label for="email">Email</label>
+          <input
+            class="contact-input"
+            id="email"
+            type="text"
+            placeholder="markrodd@hotmail.com"
+          />
           <div class="radio-container">
-            <p>Do you have cats?</p>
-            <label for="yes">Yes</label>
-            <input class="contact-radio" id="yes" type="radio" name="cats" />
-            <label for="no">No</label>
-            <input class="contact-radio" id="no" type="radio" name="cats" />
+            <fieldset>
+              <legend><p>Do you have cats?</p></legend>
+              <label for="yes">Yes</label>
+              <input class="contact-radio" id="yes" type="radio" name="cats" />
+              <label for="no">No</label>
+              <input class="contact-radio" id="no" type="radio" name="cats" />
+            </fieldset>
           </div>
           <button class="contact-submit-button" type="button">
             Send message 🎉

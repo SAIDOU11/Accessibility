@@ -101,9 +101,29 @@ body,
   margin-bottom: 10px;
 }
 
-/* 
-Challenge:
-1. Add an id attribute to each input field. (You are going to need it, *hint hint*)
-2. Add labels for each input field in the form. Look up how to associate a label with an input field so that when clicking the label, the input field gets focused.
-3. Change the placeholder names to be exemplary user inputs, i.e. "Obama" for a surname field.
-*/
+.city-select {
+  width: 150px;
+  margin: 0.312em auto 0.625em;
+}
+
+.city-select:focus-visible {
+  outline: 3px solid #bbd5ff;
+}
+
+fieldset {
+  border-radius: 20px;
+  padding: 0.5em 1.25em;
+  font-size: 1rem;
+  border: 2px solid #333333;
+  margin-bottom: 2em;
+}
+
+legend {
+  font-weight: 700;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+}
