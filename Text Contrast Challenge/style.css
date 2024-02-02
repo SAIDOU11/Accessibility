@@ -48,15 +48,16 @@ Navbar
 .logo-text {
   margin-left: 5px;
 }
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
 
 .nav-link {
   margin: 5px;
   padding: 10px;
   font-size: 1rem;
-}
-
-.nav-links {
-  display: flex;
 }
 
 /* Hero Section */
@@ -129,6 +130,11 @@ Navbar
   justify-content: space-around;
   align-items: center;
   padding: 10px 30px;
+}
+
+.stat {
+  margin: 1em 0 0.5em;
+  list-style: none;
 }
 
 .info-image {
@@ -244,6 +250,7 @@ Navbar
 }
 
 .social-links {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
