@@ -18,11 +18,22 @@ body,
   min-height: 100vh;
 }
 
-.contact-form-section {
+.contact-form-section,
+.header {
   display: flex;
   width: 800px;
   padding: 1.875em;
   margin: 0 auto;
+}
+
+.header {
+  padding: 1.875em 1.875em 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header a {
+  color: #000000;
 }
 
 .contact-image {

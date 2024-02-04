@@ -12,12 +12,15 @@
   </head>
   <body class="contact-page">
     <main id="main">
+      <div class="header">
+        <h2 class="contact-form-heading">Sign Up</h2>
+        <a id="getFocus" href="#main">Back to home page</a>
+      </div>
       <section class="contact-form-section">
         <form
           action="
         "
         >
-          <h2 class="contact-form-heading">Sign Up</h2>
           <p class="contact-form-intro">
             Enter your content information, and then there will be cake. 🍰
           </p>
@@ -75,7 +78,13 @@
               <input class="contact-radio" id="no" type="radio" name="cats" />
             </fieldset>
           </div>
-          <button class="contact-submit-button" type="button">
+          <button
+            class="contact-submit-button"
+            id="submit-button"
+            onclick="sendMessage()"
+            aria-controls="submitMessage"
+            type="button"
+          >
             Send message 🎉
           </button>
         </form>
@@ -86,5 +95,6 @@
         />
       </section>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>
