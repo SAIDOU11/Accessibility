@@ -119,52 +119,17 @@ main {
 /* Code for Skip Navigation Link goes here */
 
 .skip-nav-link {
+  border: #333333 2px solid;
+  padding: 0.5em 1.25em 0.5em;
+  border-radius: 5px;
   position: absolute;
-  left: -200px;
+  left: -240px;
   top: 80px;
+  transition: 1s;
 }
 
 .skip-nav-link:focus {
-  left: 0;
-}
-
-.auth-button {
-  display: inline-block;
-  margin-top: 8px;
-  height: fit-content;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #eee;
-  margin-right: 6px;
-}
-
-.auth-button:first-child {
-  padding: 13px 10px;
-}
-
-/* Code for toggle light/dark mode goes here */
-
-body {
-  background-color: #cecbf3; /* Default Light Mode */
-}
-
-.dark-mode {
-  background-color: #444; /* Dark Mode */
-}
-
-.dark-mode nav a {
-  color: #eee;
-}
-
-#toggleTheme {
-  margin-top: 8px;
-  height: fit-content;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #eee;
-  margin-right: 6px;
+  transition: 3s;
+  transform: translate(0%, 0);
+  left: 20px;
 }
