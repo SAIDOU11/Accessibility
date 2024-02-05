@@ -10,34 +10,53 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <div id="main">
+  <body class="contact-page">
+    <main id="main">
       <!-- Form section -->
       <div class="contact-form-section">
         <form>
-          <h2 class="contact-form-heading">Reach <span>Out</span></h2>
+          <h1 class="contact-form-heading">Reach <span>Out</span></h1>
           <div class="contact-form-intro">
             Curious about something? Complete these fields and "get in touch",
             as you humans say. 🤙
           </div>
-          <input class="contact-input" type="text" placeholder="Full name" />
-          <input class="contact-input" type="text" placeholder="Email" />
+          <label for="name">Full name</label>
+          <input
+            class="contact-input"
+            id="name"
+            type="text"
+            placeholder="Mark Tatum"
+          />
+          <label for="email">Email</label>
+          <input
+            class="contact-input"
+            id="email"
+            type="text"
+            placeholder="marktatum@gmail.com"
+          />
+          <label for="message">Text Message</label>
           <textarea
             class="contact-textarea"
+            id="message"
             rows="4"
             cols="50"
             placeholder="Your message..."
           ></textarea>
+
           <button
             class="contact-submit-button"
             type="button"
             onclick="submitForm()"
           >
-            Done 🎉
+            Send Message 🎉
           </button>
         </form>
-        <img class="contact-image" src="images/connect.jpg" />
+        <img
+          class="contact-image"
+          src="images/connect.jpg"
+          alt="A robot hand and a human hand making connection."
+        />
       </div>
-    </div>
+    </main>
   </body>
 </html>
